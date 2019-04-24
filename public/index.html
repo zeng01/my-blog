@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href='less/index.css'>
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-default" id='nav'>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">MY BLOG</a>
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class='active'><a href="#">首页</a></li>
+          <li><a href="detailList.html">文章</a></li>
+          <li><a href="#">知识分享</a></li>
+          <li><a href="#">图片墙</a></li>
+          <li><a href="#">视频</a></li>
+          <form class="navbar-form navbar-left hidden-xs hidden-sm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="搜索">
+            </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+          </form>
+          <li><a href="#">登录</a></li>
+          <li><a href="#" class='register'>注册</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main id='main'>
+    <div class="container">
+      <div class='row'>
+          
+      <div class="main-left col-xs-12 col-sm-8">
+        <!-- 轮播图 -->
+        <section id='slider'>
+
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/banner01.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="images/banner02.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="images/banner03.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="images/banner04.jpg" alt="">
+              </div>
+            </div>
+
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+        <section id='article'>
+          <div class="title"><i class='glyphicon glyphicon-list'></i> 文章推荐</div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="images/03.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <p class='author'><img src='images/default.png'>晴天</p>
+              <a herf="#">
+                <h4 class="media-heading">关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题</h4>
+              </a>
+              <p class='content'>这周是9月第2周，在接手同事的容器化代码和自动化部署代码之后发现了自己很大的问题，那就是对 Linux
+                的脚本和一些常用的命令还不是很熟悉，经常要去查命令的用法，于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。
+              </p>
+              <div class='tags'>
+                <div class="pull-left">
+                  <a href="#"><i class='glyphicon glyphicon-tag'></i>标签标题</a>
+                  <span><i class='glyphicon glyphicon-time'></i>2019年4月17</span>
+                </div>
+                <div class="pull-right">
+                  <span>
+                    <i class='glyphicon glyphicon-comment'></i>评论（<a href='#'>30</a>）
+                  </span>
+                  <span>
+                    <i class='glyphicon glyphicon-eye-open'></i>浏览（<a href='#'>30</a>）
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="images/03.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <p class='author'><img src='images/default.png'>晴天</p>
+              <a herf="#">
+                <h4 class="media-heading">关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题</h4>
+              </a>
+              <p class='content'>这周是9月第2周，在接手同事的容器化代码和自动化部署代码之后发现了自己很大的问题，那就是对 Linux
+                的脚本和一些常用的命令还不是很熟悉，经常要去查命令的用法，于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。
+              </p>
+              <div class='tags'>
+                <div class="pull-left">
+                  <a href="#"><i class='glyphicon glyphicon-tag'></i>标签标题</a>
+                  <span><i class='glyphicon glyphicon-time'></i>2019年4月17</span>
+                </div>
+                <div class="pull-right">
+                  <span>
+                    <i class='glyphicon glyphicon-comment'></i>评论（<a href='#'>30</a>）
+                  </span>
+                  <span>
+                    <i class='glyphicon glyphicon-eye-open'></i>浏览（<a href='#'>30</a>）
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="images/03.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <p class='author'><img src='images/default.png'>晴天</p>
+              <a herf="#">
+                <h4 class="media-heading">关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题</h4>
+              </a>
+              <p class='content'>这周是9月第2周，在接手同事的容器化代码和自动化部署代码之后发现了自己很大的问题，那就是对 Linux
+                的脚本和一些常用的命令还不是很熟悉，经常要去查命令的用法，于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。
+              </p>
+              <div class='tags'>
+                <div class="pull-left">
+                  <a href="#"><i class='glyphicon glyphicon-tag'></i>标签标题</a>
+                  <span><i class='glyphicon glyphicon-time'></i>2019年4月17</span>
+                </div>
+                <div class="pull-right">
+                  <span>
+                    <i class='glyphicon glyphicon-comment'></i>评论（<a href='#'>30</a>）
+                  </span>
+                  <span>
+                    <i class='glyphicon glyphicon-eye-open'></i>浏览（<a href='#'>30</a>）
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="images/03.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <p class='author'><img src='images/default.png'>晴天</p>
+              <a herf="#">
+                <h4 class="media-heading">关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题</h4>
+              </a>
+              <p class='content'>这周是9月第2周，在接手同事的容器化代码和自动化部署代码之后发现了自己很大的问题，那就是对 Linux
+                的脚本和一些常用的命令还不是很熟悉，经常要去查命令的用法，于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。
+              </p>
+              <div class='tags'>
+                <div class="pull-left">
+                  <a href="#"><i class='glyphicon glyphicon-tag'></i>标签标题</a>
+                  <span><i class='glyphicon glyphicon-time'></i>2019年4月17</span>
+                </div>
+                <div class="pull-right">
+                  <span>
+                    <i class='glyphicon glyphicon-comment'></i>评论（<a href='#'>30</a>）
+                  </span>
+                  <span>
+                    <i class='glyphicon glyphicon-eye-open'></i>浏览（<a href='#'>30</a>）
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="images/03.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <p class='author'><img src='images/default.png'>晴天</p>
+              <a herf="#">
+                <h4 class="media-heading">关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题</h4>
+              </a>
+              <p class='content'>这周是9月第2周，在接手同事的容器化代码和自动化部署代码之后发现了自己很大的问题，那就是对 Linux
+                的脚本和一些常用的命令还不是很熟悉，经常要去查命令的用法，于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。
+              </p>
+              <div class='tags'>
+                <div class="pull-left">
+                  <a href="#"><i class='glyphicon glyphicon-tag'></i>标签标题</a>
+                  <span><i class='glyphicon glyphicon-time'></i>2019年4月17</span>
+                </div>
+                <div class="pull-right">
+                  <span>
+                    <i class='glyphicon glyphicon-comment'></i>评论（<a href='#'>30</a>）
+                  </span>
+                  <span>
+                    <i class='glyphicon glyphicon-eye-open'></i>浏览（<a href='#'>30</a>）
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="images/03.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <p class='author'><img src='images/default.png'>晴天</p>
+              <a herf="#">
+                <h4 class="media-heading">关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题</h4>
+              </a>
+              <p class='content'>这周是9月第2周，在接手同事的容器化代码和自动化部署代码之后发现了自己很大的问题，那就是对 Linux
+                的脚本和一些常用的命令还不是很熟悉，经常要去查命令的用法，于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。
+              </p>
+              <div class='tags'>
+                <div class="pull-left">
+                  <a href="#"><i class='glyphicon glyphicon-tag'></i>标签标题</a>
+                  <span><i class='glyphicon glyphicon-time'></i>2019年4月17</span>
+                </div>
+                <div class="pull-right">
+                  <span>
+                    <i class='glyphicon glyphicon-comment'></i>评论（<a href='#'>30</a>）
+                  </span>
+                  <span>
+                    <i class='glyphicon glyphicon-eye-open'></i>浏览（<a href='#'>30</a>）
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="images/03.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <p class='author'><img src='images/default.png'>晴天</p>
+              <a herf="#">
+                <h4 class="media-heading">关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题</h4>
+              </a>
+              <p class='content'>这周是9月第2周，在接手同事的容器化代码和自动化部署代码之后发现了自己很大的问题，那就是对 Linux
+                的脚本和一些常用的命令还不是很熟悉，经常要去查命令的用法，于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。
+              </p>
+              <div class='tags'>
+                <div class="pull-left">
+                  <a href="#"><i class='glyphicon glyphicon-tag'></i>标签标题</a>
+                  <span><i class='glyphicon glyphicon-time'></i>2019年4月17</span>
+                </div>
+                <div class="pull-right">
+                  <span>
+                    <i class='glyphicon glyphicon-comment'></i>评论（<a href='#'>30</a>）
+                  </span>
+                  <span>
+                    <i class='glyphicon glyphicon-eye-open'></i>浏览（<a href='#'>30</a>）
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="images/03.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <p class='author'><img src='images/default.png'>晴天</p>
+              <a herf="#">
+                <h4 class="media-heading">关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题</h4>
+              </a>
+              <p class='content'>这周是9月第2周，在接手同事的容器化代码和自动化部署代码之后发现了自己很大的问题，那就是对 Linux
+                的脚本和一些常用的命令还不是很熟悉，经常要去查命令的用法，于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。
+              </p>
+              <div class='tags'>
+                <div class="pull-left">
+                  <a href="#"><i class='glyphicon glyphicon-tag'></i>标签标题</a>
+                  <span><i class='glyphicon glyphicon-time'></i>2019年4月17</span>
+                </div>
+                <div class="pull-right">
+                  <span>
+                    <i class='glyphicon glyphicon-comment'></i>评论（<a href='#'>30</a>）
+                  </span>
+                  <span>
+                    <i class='glyphicon glyphicon-eye-open'></i>浏览（<a href='#'>30</a>）
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="images/03.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <p class='author'><img src='images/default.png'>晴天</p>
+              <a herf="#">
+                <h4 class="media-heading">关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题</h4>
+              </a>
+              <p class='content'>这周是9月第2周，在接手同事的容器化代码和自动化部署代码之后发现了自己很大的问题，那就是对 Linux
+                的脚本和一些常用的命令还不是很熟悉，经常要去查命令的用法，于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。
+              </p>
+              <div class='tags'>
+                <div class="pull-left">
+                  <a href="#"><i class='glyphicon glyphicon-tag'></i>标签标题</a>
+                  <span><i class='glyphicon glyphicon-time'></i>2019年4月17</span>
+                </div>
+                <div class="pull-right">
+                  <span>
+                    <i class='glyphicon glyphicon-comment'></i>评论（<a href='#'>30</a>）
+                  </span>
+                  <span>
+                    <i class='glyphicon glyphicon-eye-open'></i>浏览（<a href='#'>30</a>）
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="images/03.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <p class='author'><img src='images/default.png'>晴天</p>
+              <a herf="#">
+                <h4 class="media-heading">关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题</h4>
+              </a>
+              <p class='content'>这周是9月第2周，在接手同事的容器化代码和自动化部署代码之后发现了自己很大的问题，那就是对 Linux
+                的脚本和一些常用的命令还不是很熟悉，经常要去查命令的用法，于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。于是决定还是开个分类每周一篇文章来记录一下每天用到或者见到的命令，算是一种笔记吧！这是第一期。
+              </p>
+              <div class='tags'>
+                <div class="pull-left">
+                  <a href="#"><i class='glyphicon glyphicon-tag'></i>标签标题</a>
+                  <span><i class='glyphicon glyphicon-time'></i>2019年4月17</span>
+                </div>
+                <div class="pull-right">
+                  <span>
+                    <i class='glyphicon glyphicon-comment'></i>评论（<a href='#'>30</a>）
+                  </span>
+                  <span>
+                    <i class='glyphicon glyphicon-eye-open'></i>浏览（<a href='#'>30</a>）
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="main-right col-xs-12 col-sm-4">
+        <div class="regard">
+          <div class='h5'>关于我</div>
+          <div class="regard-link">
+            <a href="#">
+              <img src="images/git.jpg" alt="源码" title='github源码'>
+            </a>
+          </div>
+        </div>
+        <div class="article">
+          <ul class='nav nav-tabs tablist' role="tablist">
+            <li role='presentation'>
+              <a href="#home" aria-controls="home" role='tab' data-toggle="tab">最新文章</a>
+            </li>
+            <li role='presentation' class='active'>
+              <a href="#profile" aria-controls="profile" role='tab' data-toggle="tab">点击排行</a>
+            </li>
+            <li role='presentation'>
+              <a href="#messages" aria-controls="messages" role='tab' data-toggle="tab">最新评论</a>
+            </li>
+
+          </ul>
+          <div class="tab-content">
+            <div role='tabpanel' class='tab-pane' id='home'>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#" class='media-title'>
+                    关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题
+                  </a>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#" class='media-title'>
+                    关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题
+                  </a>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#" class='media-title'>
+                    关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题
+                  </a>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#" class='media-title'>
+                    关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题
+                  </a>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#" class='media-title'>
+                    关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题
+                  </a>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#" class='media-title'>
+                    关于本博客项目的一些版本及对应分支的调整并解答一些问题关于本博客项目的一些版本及对应分支的调整并解答一些问题
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <div role='tabpanel' class='tab-pane active' id='profile'>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <i class='num num-danger'>1</i>
+                  <span class="badge">14</span>
+                  <a href='#'>Cras justo odio</a>
+                </li>
+                <li class="list-group-item">
+                  <i class='num num-info'>1</i>
+                  <span class="badge">14</span>
+                  <a href='#'>Cras justo odio</a>
+                </li>
+                <li class="list-group-item">
+                  <i class='num num-warning'>1</i>
+                  <span class="badge">14</span>
+                  <a href='#'>Cras justo odio</a>
+                </li>
+                <li class="list-group-item">
+                  <i class='num'>1</i>
+                  <span class="badge">14</span>
+                  <a href='#'>Cras justo odio</a>
+                </li>
+                <li class="list-group-item">
+                  <i class='num'>1</i>
+                  <span class="badge">14</span>
+                  <a href='#'>Cras justo odio</a>
+                </li>
+                <li class="list-group-item">
+                  <i class='num'>1</i>
+                  <span class="badge">14</span>
+                  <a href='#'>Cras justo odio</a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div role='tabpanel' class='tab-pane' id='messages'>
+              <div class="media comment">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#">
+                    <p class='username'>小明 评论说:</p>
+                    <P class='txt'>--这篇文章很好,这篇文章很好,这篇文章很好,这篇文章很好</P>
+                  </a>
+                </div>
+              </div>
+              <div class="media comment">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#">
+                    <p class='username'>小明 评论说:</p>
+                    <P class='txt'>--这篇文章很好,这篇文章很好,这篇文章很好,这篇文章很好</P>
+                  </a>
+                </div>
+              </div>
+              <div class="media comment">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#">
+                    <p class='username'>小明 评论说:</p>
+                    <P class='txt'>--这篇文章很好,这篇文章很好,这篇文章很好,这篇文章很好</P>
+                  </a>
+                </div>
+              </div>
+              <div class="media comment">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#">
+                    <p class='username'>小明 评论说:</p>
+                    <P class='txt'>--这篇文章很好,这篇文章很好,这篇文章很好,这篇文章很好</P>
+                  </a>
+                </div>
+              </div>
+              <div class="media comment">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#">
+                    <p class='username'>小明 评论说:</p>
+                    <P class='txt'>--这篇文章很好,这篇文章很好,这篇文章很好,这篇文章很好</P>
+                  </a>
+                </div>
+              </div>
+              <div class="media comment">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="images/03.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a herf="#">
+                    <p class='username'>小明 评论说:</p>
+                    <P class='txt'>--这篇文章很好,这篇文章很好,这篇文章很好,这篇文章很好</P>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tags">
+          <div class="h5">标签</div>
+          <ul class='nav navbar-nav tablist'>
+            <li>
+              <a href="#" class="label">Default</a>
+            </li>
+            <li>
+              <a href="#" class="label">Default</a>
+            </li>
+            <li>
+              <a href="#" class="label">Default</a>
+            </li>
+            <li>
+              <a href="#" class="label">Default</a>
+            </li>
+            <li>
+              <a href="#" class="label">Default</a>
+            </li>
+            <li>
+              <a href="#" class="label">Default</a>
+            </li>
+            <li>
+              <a href="#" class="label">Default</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </main>
+  <footer id='footer'>
+    <p>CopyRight © 2019 个人博客</p>
+  </footer>
+  <div id='back-to-top'>
+    <a href="#top" class='glyphicon glyphicon-eject'></a>
+  </div>
+
+</body>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/common.js"></script>
+
+</html>
