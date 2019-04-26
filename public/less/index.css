@@ -115,6 +115,7 @@
   padding-left: 10px;
   line-height: 40px;
   border-bottom: 2px solid #4fd2c2;
+  background: #fff;
 }
 #main .main-right .regard {
   background: #fff;
@@ -303,6 +304,15 @@
   text-align: center;
   line-height: 20px;
   margin-right: 5px;
+}
+#main .main-right .article .tab-content li .num-danger {
+  background: #D9534F;
+}
+#main .main-right .article .tab-content li .num-info {
+  background: #F0AD4E;
+}
+#main .main-right .article .tab-content li .num-warning {
+  background: #5BC0DE;
 }
 #main .main-right .article .tab-content li .badge {
   background: #FCF8E3;

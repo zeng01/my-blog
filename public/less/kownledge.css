@@ -167,34 +167,40 @@
   color: #fff;
   text-decoration: none;
 }
-#main .content {
-  background: #fff;
-  padding: 20px;
-}
-#main .content .title {
-  line-height: 30px;
-  font-size: 20px;
-}
-#main .content .reading {
+#main .h5 {
+  background: #4fd2c2;
   line-height: 40px;
+  padding-left: 10px;
+  font-weight: 700;
+  color: #fff;
 }
-#main .content .reading a {
-  color: #D7855F;
-}
-#main .content .reading a:hover {
-  color: #4fd2c2;
-}
-#main .menu {
-  margin-top: 20px;
-}
-#main .menu .badge {
-  background: #FCF8E3;
-  color: #999;
-  font-weight: 100;
-}
-#main .menu a {
+#main a {
   color: #333;
 }
-#main .menu a:hover {
-  color: #4fd2c2;
+#main a:hover {
+  color: #D7855F;
+  background: #fff;
+}
+#main .recomment-books {
+  background: #fff;
+  padding: 10px 0;
+}
+#main .recomment-books ul {
+  padding: 10px 0;
+}
+#main .recomment-books ul li {
+  width: 50%;
+  line-height: 20px;
+  height: 50px;
+  float: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+#main .other-books {
+  margin-top: 20px;
+}
+#main .other-books .h5 {
+  background: #F0AD4E;
 }

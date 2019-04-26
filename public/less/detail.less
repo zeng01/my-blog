@@ -1,10 +1,36 @@
 @import 'base.less';
 #main{
+   
     .content{
         background: #fff;
+        padding:20px;
         .title{
+            line-height: 30px;
+            font-size: 20px;
+            
+        }
+        .reading{
             line-height: 40px;
-            font-size: 25px;
+            a{
+                color:#D7855F;
+                &:hover{
+                    color:@main-color;
+                }
+            }
+        }
+    }
+    .menu{
+        margin-top: 20px;
+        .badge{
+            background: #FCF8E3;
+            color: #999;
+            font-weight: 100;
+        }
+        a{
+            color: #333;
+            &:hover{
+                color:@main-color;
+            }
         }
     }
 }

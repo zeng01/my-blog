@@ -145,15 +145,6 @@
   padding: 5px;
   line-height: 14px;
 }
-#main .main-right .num-danger {
-  background: #D9534F;
-}
-#main .main-right .num-info {
-  background: #F0AD4E;
-}
-#main .main-right .num-warning {
-  background: #5BC0DE;
-}
 #footer {
   height: 100px;
   background: #333;
